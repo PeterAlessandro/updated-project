@@ -1,0 +1,5 @@
+-let datos=["index","store","contact-form","faq","privacity"]
+mixin navigation(extraClass,id)
+  nav(class=`navigation ${extraClass?extraClass:""}`.trimEnd() id=id): ul(class="nav-list")
+    each dato in datos
+      li: a(href=`./${dato}.html` )=`${dato.toUpperCase()}`

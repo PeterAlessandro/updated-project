@@ -1,0 +1,9 @@
+@use "abstracts" as *;
+.flow * + * {
+  margin-top: var(--flow-spacer,1rem);
+}
+@media (max-width:calc(65em - 1px)) {
+  .flow-mb * + *{
+    margin-top: var(--flow-spacer,1rem);
+  }
+}

@@ -1,0 +1,39 @@
+@use "abstracts";
+body{
+  font-size: var(--fs-400);
+  font-family:abstracts.$ff-primary, 'Segoe UI', Tahoma, Geneva, Verdana;
+  color: var(--clr-primary-900);
+  letter-spacing: -.3px;
+}
+h1, h2, h3, h4 { 
+  line-height: 1.1;
+  color: var(--clr-secondary-900);
+  letter-spacing: -1.5px;
+};
+h2{
+  font-size:var(--fs-700);
+}
+h3,
+.h3 {
+  font-size: var(--fs-600);
+}
+small,
+.text-small {
+  font-size: var(--fs-300);
+  
+}
+.max-content{
+  width: max-content;
+}
+a {
+  color: var(--clr-primary-400);
+  text-decoration: none;  
+  &:focus {
+    color: var(--clr-primary-500);
+  }
+  @media  (hover: hover){
+    &:hover{
+      color: var(--clr-primary-500);
+    }
+  }
+}

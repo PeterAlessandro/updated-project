@@ -1,0 +1,17 @@
+.accordion{
+  cursor: pointer;
+  padding-block:1rem ;
+  padding-inline: 1.5rem;
+  &__title{
+    position: relative;
+  }
+  &__title::after{
+    content:"\2b";
+    position: absolute;
+    right: 0;
+  }
+  :where(&[open]) > &__title::after{
+    content:"\f068";
+  }
+}
+

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_about {
+    flex: 1;
+}
+
+.image_about {
+    box-shadow: 10px 20px 30px black;
+    object-fit: cover;
+}
+
+.cont_about {
+    flex: 1;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+@media( min-width: 1024px) {
+    .container{
+        flex-direction: row;
+    }
+}

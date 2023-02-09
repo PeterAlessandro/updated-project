@@ -1,0 +1,18 @@
+@use 'abstracts' as *;
+
+.button{
+  cursor:pointer;
+  letter-spacing:0.05em;
+  text-align: center;
+  padding: 0.8em 2em;
+  &--category,&--map{
+    order: 1;
+    @include mq(big){
+      &{
+        justify-self: end;
+        order: initial;
+      }
+    }
+  }
+
+}

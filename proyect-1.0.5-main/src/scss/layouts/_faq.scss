@@ -1,0 +1,10 @@
+.faq{
+  &__header{
+    padding-block-end:var(--size-600);
+    text-align: center;
+  }
+  &__wrapper{
+    display: grid;
+    row-gap: var(--size-500);
+  }
+}
